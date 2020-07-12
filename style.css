@@ -1,0 +1,30 @@
+.container{
+  display: grid;
+  grid-template-column: 130px;
+  grid-template-rows: 70px 500px 100px 50px;
+  grid-template-areas: "hd hd hd hd hd"
+    "main main main main main"
+    "sd sd sd sd sd"
+    "ft ft ft ft ft";
+  grid-gap: 1px;
+}
+
+.line{
+  border: 2px solid red;
+}
+
+.top{
+  grid-area: hd;
+}
+
+.main{
+  grid-area: main;
+}
+
+.side{
+  grid-area: sd;
+}
+
+.footer{
+  grid-area: ft;
+}
